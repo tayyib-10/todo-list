@@ -1,0 +1,32 @@
+body {
+  background-color: #1B2482;
+  margin: 0;  
+  padding: 0
+}
+
+#inputContainer{
+  background-color: #F18E0A;
+  margin: 2% 1%;
+  display: flex;
+  padding: 1%;
+  border-radius: 10px 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#todoText {
+  width: 98%;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 10px 10px;
+}
+
+#descContainer {
+  display: grid;
+  width: 98%;
+  height: 50px;
+  
+  grid-template-columns: 80% 20%;
+}
