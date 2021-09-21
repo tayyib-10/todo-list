@@ -27,6 +27,58 @@ body {
   display: grid;
   width: 98%;
   height: 50px;
-  
+  margin-top: 10px;
   grid-template-columns: 80% 20%;
+}
+
+#descText {
+  margin-right: 10px;
+  border-radius: 10px 10px;
+  text-align: center;
+}
+
+#btn {
+  border-radius: 10px 10px;
+  background-color: #F18E0A;
+  border: 2px solid black;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #464F86;
+  font-weight: bold;
+}
+
+#todoText:focus, #descText:focus {
+  outline: none;
+}
+
+h1 {
+  color: white;
+  margin-left: 1%;
+  font-weight: 300;
+}
+
+#todos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.todoElement {
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 5px 5px 15px 5px #F18E0A;
+}
+
+.todoTitle {
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.descTitle {
+  color: grey;
+}
+
+.remove {
+  display: none;
 }
