@@ -23,6 +23,9 @@ const createTodo = (todo, desc) => {
   
   todoElement.addEventListener('dblclick', () => {
     todoElement.classList.add('remove')
+    title.classList.add('remove')
+    descHeader.classList.add('remove')
+    //todoElement.classList.remove('todoElement')
   })
   
 }

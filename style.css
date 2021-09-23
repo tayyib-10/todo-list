@@ -1,7 +1,8 @@
 body {
   background-color: #1B2482;
   margin: 0;  
-  padding: 0
+  padding: 0;
+  overflow-x: hidden;
 }
 
 #inputContainer{
@@ -64,6 +65,9 @@ h1 {
 
 .todoElement {
   background-color: white;
+  animation-name: appear;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
   padding: 5px;
   border-radius: 10px;
   margin: 15px;
@@ -80,5 +84,34 @@ h1 {
 }
 
 .remove {
-  display: none;
+  animation-name: disappear;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes appear {
+  from {
+    opacity: 0%;
+    filter: blur(100px)
+  }
+  
+  to {
+    opacity: 100%;
+    filter: blur(0px);
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 100%;
+    filter: blur(0px)
+  }
+
+  100% {
+    opacity: 0%;
+    filter: blur(100px);
+  }
+  
 }
