@@ -31,8 +31,12 @@ const createTodo = (todo, desc) => {
 }
 
 btn.addEventListener('click', () => {
-  createTodo(todoTitle.value, descInfo.value)
- //todoTitle.value = ''
-  //descInfo.value = ''
+  if (todoTitle.value !=='' && descInfo.value !== '') {
+    createTodo(todoTitle.value, descInfo.value)
+    
+  }
+  
+  todoTitle.value = ''
+  descInfo.value = ''
   
 })
